@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spongify.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="84.0" layoutY="435.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="107.0" text="Change Text" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="22.0" layoutY="85.0" text="Pre meme" />
+      <Label layoutX="19.0" layoutY="190.0" text="Post meme" />
+      <TextArea fx:id="pre" layoutX="84.0" layoutY="51.0" onKeyReleased="#keyPressed" prefHeight="85.0" prefWidth="406.0" wrapText="true" />
+      <TextArea fx:id="post" editable="false" layoutX="84.0" layoutY="156.0" prefHeight="85.0" prefWidth="406.0" wrapText="true" />
+      <Label layoutX="272.0" layoutY="439.0" text="Song:" />
+      <TextField fx:id="songText" editable="false" layoutX="313.0" layoutY="435.0" text="Nothing" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="512.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Text ">
+            <items>
+              <MenuItem fx:id="redditText" mnemonicParsing="false" onAction="#redditChange" text="FREakInG DiE" />
+                  <MenuItem fx:id="spongeText" mnemonicParsing="false" onAction="#spongebobChange" text="SpOnGeBoB" />
+                  <MenuItem fx:id="clearAll" mnemonicParsing="false" onAction="#clearAll" text="Clear Text" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Music">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#stopMusic" text="Stop" />
+              <MenuItem fx:id="nextMusic" mnemonicParsing="false" onAction="#nextSong" text="Next Song" />
+                  <MenuItem fx:id="previousMusic" mnemonicParsing="false" onAction="#previousSong" text="Previous Song" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem fx:id="helpMenu" mnemonicParsing="false" onAction="#helpUser" text="Help" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+         
+    </children>
+</AnchorPane>

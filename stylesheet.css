@@ -1,0 +1,46 @@
+
+/* 
+    Created on : Jun 22, 2017, 12:57:15 PM
+    Author     : Shad
+*/
+.root {
+     -fx-background-image: url("spongebob.png");
+     -fx-font-family: "Comic Sans MS";
+}
+.button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Comic Sans MS";
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-color: #ffffff
+}
+.radio-button{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-color: #ffffff;
+    -fx-background-size: .3;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 14px;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.label {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.text-area {
+  -fx-font-family: "Comic Sans MS";
+  -fx-highlight-fill: #00ff00;
+  -fx-highlight-text-fill: #61a2b1;
+  -fx-text-fill: #000000;
+  -fx-font-size: 16px;
+}
+
+.text-area .content {
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Comic Sans MS";
+}
